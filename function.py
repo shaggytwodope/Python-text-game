@@ -34,7 +34,7 @@ def advance ():
 		elif look != "walk" or "look":
 			advance = 3
 
-		elif advance == 1:
+		if advance == 1:
 			print "You look at %s " % thing
 		elif advance == 2:
 			print "You walk away"
