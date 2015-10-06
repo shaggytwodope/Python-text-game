@@ -35,3 +35,5 @@ print "You see a %s on the ground." % thing
 print " "
 
 advance()
+
+print "last message in game.py, if this showes, the game is ended"
