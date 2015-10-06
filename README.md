@@ -23,4 +23,7 @@ make paths to rooms|
 main while loop?|
 inventory|
 map?|
+weapons|
+equip system|
+armor|
 
