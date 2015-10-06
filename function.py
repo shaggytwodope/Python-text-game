@@ -23,4 +23,18 @@ def equip(item):
 	elif item == "sword":
 		return 20
 
-
+def advance ():
+	advance = 3
+	while advance != 1 or 2:
+		look = raw_input("Type 'look' to look at %s, or 'walk' to walk away: " % thing)
+		if look == "look":
+			return advance == 1
+		elif look == "walk":
+			return advance == 2
+		elif look != "walk" or "look":
+			return advance == 3
+		
+	if advance == 1:
+		print "You look at %s " % thing
+	elif advance == 2:
+		print "You walk away"
