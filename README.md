@@ -6,10 +6,13 @@ I just started this project to learn how to program. I chosed python for no appa
 
 
 
-#currently how you equip
+###currently how you equip
 playerDamage = equip("sword")
 
 
-##Main.py
+###Main.py
 
 I'm making a main.py script to look for inputs. It's mostly for experimenting atm.
+
+###TODO
+[b]test[b]
