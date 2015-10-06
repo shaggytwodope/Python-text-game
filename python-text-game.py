@@ -1,7 +1,22 @@
 # Amma make a game!
-import function
-import variables
 
+
+playerHealth	= 100
+playerDamage	= 10
+playerArmor	= 0
+playerWeapon	= "none"
+thing		= "none"
+
+def next():
+	next = raw_input("Type 'next' to continue: ")
+	while next != "next":
+		next = raw_input("Type 'next' to continue: ")
+		
+def playerStat():
+	print "%d health"       % playerHealth
+	print "%d damage"	% playerDamage
+	print "%d armor"	% playerArmor
+	print "weapon: %s"	% playerWeapon
 
 # Title
 print "This is a game"
@@ -33,5 +48,4 @@ print "You look out into the wilderness that is this world."
 print "You see a %s on the ground." % thing
 print " "
 
-select()
 
