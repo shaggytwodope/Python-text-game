@@ -15,6 +15,6 @@ playerDamage = equip("sword")
 I'm making a main.py script to look for inputs. It's mostly for experimenting atm.
 
 ###TODO
-|<b>Things</b>|Done?|
----------------------
-|path| |
+Test|test2
+----|----
+test3|test4
