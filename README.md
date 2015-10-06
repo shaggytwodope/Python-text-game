@@ -2,4 +2,7 @@
 
 Run python-text-game.py to start the game.
 
-notes.py only includes notes for some commands.
+
+
+#currently how you equip
+playerDamage = equip("sword")
