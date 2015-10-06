@@ -23,7 +23,8 @@ def equip(item):
 	elif item == "sword":
 		return 20
 
-def advance ():
+# This is a function to let you look at an item in the game.
+def look ():
 	advance = 3
 	while advance != 1 or 2:
 		look = raw_input("Type 'look' to look at %s, or 'walk' to walk away: " % thing)
