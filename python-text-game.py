@@ -33,5 +33,4 @@ print "You look out into the wilderness that is this world."
 print "You see a %s on the ground." % thing
 print " "
 
-select()
 
