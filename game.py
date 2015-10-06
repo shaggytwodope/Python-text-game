@@ -36,4 +36,9 @@ print " "
 
 look()
 
+if advance == 1:
+	print "the shiny metal object is a dagger."
+elif advance == 2:
+	print "you continue to walk, wondering on what that item might've been."
+
 print "last message in game.py, if this showes, the game is ended"

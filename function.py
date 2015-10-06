@@ -1,5 +1,6 @@
 from variables import *
-# These are all the functions for the main game
+
+# These are all the functions for the game
 
 # This function prints you characters stats.
 def playerStat():
@@ -25,6 +26,7 @@ def equip(item):
 
 # This is a function to let you look at an item in the game.
 def look ():
+	global advance
 	advance = 3
 	while advance != 1 or 2:
 		look = raw_input("Type 'look' to look at %s, or 'walk' to walk away: " % thing)
