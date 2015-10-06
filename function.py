@@ -36,5 +36,7 @@ def advance ():
 
 		if advance == 1:
 			print "You look at %s " % thing
+			break
 		elif advance == 2:
 			print "You walk away"
+			break
