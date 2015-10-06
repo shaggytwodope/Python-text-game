@@ -1,6 +1,6 @@
 # Amma make a game!
-import function
-import variables
+from function import *
+from variables import *
 
 
 # Title

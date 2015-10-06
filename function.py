@@ -1,3 +1,4 @@
+from variables import *
 # These are all the functions for the main game
 
 # This function prints you characters stats.
