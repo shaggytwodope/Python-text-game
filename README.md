@@ -31,4 +31,5 @@ pick up item|work in progress
 
 
 ####change log
-7/10-15: I've started to create the pickup function. I now need to figure out how to move the variables outside of the function and function.py and into the game.py and variable.py.
+<b>7/10-15:</b>
+I've started to create the pickup function. I now need to figure out how to move the variables outside of the function and function.py and into the game.py and variable.py.
