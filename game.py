@@ -38,6 +38,8 @@ look()
 
 if advance == 1:
 	print "the shiny metal object is a dagger."
+	print "Do you wish to pick it up?"
+	#add function for picking up thing
 elif advance == 2:
 	print "you continue to walk, wondering on what that item might've been."
 

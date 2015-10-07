@@ -36,7 +36,8 @@ def look ():
 			advance = 2
 		elif look != "walk" or "look":
 			advance = 3
-
+		
+		# This prints out your results and ends the while loop.
 		if advance == 1:
 			print "You look at %s " % thing
 			break

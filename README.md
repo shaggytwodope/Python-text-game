@@ -26,4 +26,4 @@ map?|
 weapons|
 equip system|
 armor|
-
+pick up item|work in progress
