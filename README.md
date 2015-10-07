@@ -26,9 +26,9 @@ main while loop?|
 inventory| Prototype works
 map?|
 weapons|
-equip system|
+equip system|work in progress
 armor|
-pick up item|I'd say this is done for now.
+pick up item|done
 fixing the variables|done
 
 
