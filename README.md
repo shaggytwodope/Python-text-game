@@ -36,6 +36,8 @@ fixing the variables|done
 ####change log
 <b>7/10-15:</b>  
 
+Fixed the askEquip so it updates the playerDamage.
+
 Made the obsolete folder and moved the obsolete files into that folder. You only need game.py to run/modify code.
 
 Renamed game.py to oldgame.py and test to game.py
