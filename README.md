@@ -7,7 +7,7 @@ I just started this project to learn how to program. I chosed python for no appa
 
 
 ###currently how you equip
-playerDamage = equip("sword")
+playerDamage = equip("sword"). This is not yet implemented.
 
 
 ###Main.py
