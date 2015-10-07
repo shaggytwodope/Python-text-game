@@ -7,16 +7,17 @@ playerArmor	= 0
 playerWeapon	= "none"
 thing		= "none"
 advance		= 0
-inventory	= "none"
+playerBag	= "none"
 
 # These are all the functions for the game
 
 # This function prints you characters stats.
 def playerStat():
-	print "%d health"       % playerHealth
-	print "%d damage"	% playerDamage
-	print "%d armor"	% playerArmor
-	print "weapon: %s"	% playerWeapon
+	print "%d health"       	% playerHealth
+	print "%d damage"		% playerDamage
+	print "%d armor"		% playerArmor
+	print "weapon: %s"		% playerWeapon
+	print "inventory: %s"		% playerBag
 
 
 # This function lets you advanced when typing "next".
@@ -57,9 +58,10 @@ def askEquip():
 			equip(thing)
 			print playerStat()
 			break
-		if adavance == 2:
+		if advance == 2:
 			print "you store it in your backpack for later"
-			inventory = thing
+			playerBag = thing
+			print "inventory: %s"		% playerBag
 			break
 
 # This is a function to let you look at an item in the game.

@@ -21,18 +21,20 @@ make paths|
 make rooms|
 make paths to rooms|
 main while loop?|
-inventory|
+inventory| Prototype works
 map?|
 weapons|
 equip system|
 armor|
-pick up item|work in progress
-fixing the variables|work in progress
+pick up item|I'd say this is done for now.
+fixing the variables|done
 
 
 
 ####change log
 <b>7/10-15:</b>  
+Made a inventory prototype. seems to work. Now I need to fix playerDamage. I've set the variable todo to done, since after putting everything into one file, it works.
+
 I made askEquip, and edited equip to handle equiping of the weapon. It currently won't update playerWeapon, and I haven't implemeted the damage buff thing. 
 
 I made test.py, which is a combination of every file. Now the game works flawlessly.
