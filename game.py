@@ -36,7 +36,7 @@ print " "
 
 look()
 
-advance = 1
+advance = 2
 if advance == 1:
 	print "the shiny metal object is a dagger."
 	#add function for picking up thing
