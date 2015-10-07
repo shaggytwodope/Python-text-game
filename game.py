@@ -56,6 +56,7 @@ def askEquip():
 		# this prints results and ends the while loop
 		if advance == 1:
 			print "You equiped the %s" % thing
+			global playerDamage
 			playerDamage = equip(thing)
 			print playerStat()
 			break
