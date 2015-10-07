@@ -2,6 +2,8 @@
 
 Run test.py to start the game.
 
+The other files except test.py is obsolete. Not sure if I wish to remove them just yet.
+
 I just started this project to learn how to program. I chosed python for no apparent reason.
 
 
