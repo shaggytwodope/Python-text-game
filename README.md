@@ -1,8 +1,8 @@
 # Python-text-game
 
-Run test.py to start the game.
+Run game.py to start the game.
 
-The other files except test.py is obsolete. Not sure if I wish to remove them just yet.
+The other files except game.py is obsolete. Not sure if I wish to remove them just yet.
 
 I just started this project to learn how to program. I chosed python for no apparent reason.
 
@@ -35,6 +35,8 @@ fixing the variables|done
 
 ####change log
 <b>7/10-15:</b>  
+Renamed game.py to oldgame.py and test to game.py
+
 Made a inventory prototype. seems to work. Now I need to fix playerDamage. I've set the variable todo to done, since after putting everything into one file, it works.
 
 I made askEquip, and edited equip to handle equiping of the weapon. It currently won't update playerWeapon, and I haven't implemeted the damage buff thing. 
