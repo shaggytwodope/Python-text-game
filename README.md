@@ -35,6 +35,9 @@ fixing the variables|done
 
 ####change log
 <b>7/10-15:</b>  
+
+Made the obsolete folder and moved the obsolete files into that folder. You only need game.py to run/modify code.
+
 Renamed game.py to oldgame.py and test to game.py
 
 Made a inventory prototype. seems to work. Now I need to fix playerDamage. I've set the variable todo to done, since after putting everything into one file, it works.
