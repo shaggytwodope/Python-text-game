@@ -34,7 +34,6 @@ def equip(item):
 	if item == "dagger":
 		global playerWeapon
 		playerWeapon = "dagger"
-		global playerDamage
 		return 15
 	elif item == "sword":
 		playerWeapon = "sword"
@@ -57,7 +56,7 @@ def askEquip():
 		# this prints results and ends the while loop
 		if advance == 1:
 			print "You equiped the %s" % thing
-			equip(thing)
+			playerDamage = equip(thing)
 			print playerStat()
 			break
 		if advance == 2:
