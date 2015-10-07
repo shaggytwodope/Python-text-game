@@ -9,6 +9,8 @@ thing		= "none"
 advance		= 0
 playerBag	= "none"
 
+#test
+
 # These are all the functions for the game
 
 # This function prints you characters stats.
