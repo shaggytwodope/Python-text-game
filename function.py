@@ -24,6 +24,7 @@ def equip(item):
 	elif item == "sword":
 		return 20
 
+
 # This is a function to let you look at an item in the game.
 def look ():
 	global advance
@@ -46,7 +47,7 @@ def look ():
 			break
 		
 
-#This is a function for picking up an item.
+# This is a function for picking up an item.
 def pickup():
 	advance = 3
 	while advance != 1 or 2:

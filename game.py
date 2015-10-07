@@ -2,7 +2,6 @@
 from function import *
 from variables import *
 
-
 # Title
 print "This is a game"
 print " "
@@ -39,7 +38,6 @@ look()
 advance = 2
 if advance == 1:
 	print "the shiny metal object is a dagger."
-	#add function for picking up thing
 	pickup()
 elif advance == 2:
 	print "you continue to walk, wondering on what that item might've been."
