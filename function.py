@@ -44,3 +44,23 @@ def look ():
 		elif advance == 2:
 			print "You walk away"
 			break
+		
+
+#This is a function for picking up an item.
+def pickup():
+	advance = 3
+	while advance != 1 or 2:
+		pickup = raw_input("Do you wish to pick up %s? 'yes' or 'no': " % thing)
+		if pickup == "yes":
+			advance = 1
+		elif pickup == "no":
+			advance = 2
+		elif pickup != "yes" or "no":
+			advance = 3
+			
+		# this prints your results and ends the while loop.
+		if advance == 1:
+			print "You pick up %s" % thing
+			break
+		elif advance == 2:
+			break
