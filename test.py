@@ -1,21 +1,13 @@
 # These are the main variables for the game
 
 # Names and initial stats
-global playerHealth
 playerHealth	= 100
-
-global playerDamage
 playerDamage	= 10
-
-global playerArmor
 playerArmor	= 0
-
-global playerWeapon
 playerWeapon	= "none"
-
-global thing
 thing		= "none"
-
+advance		= 0
+inventory	= "none"
 
 # These are all the functions for the game
 
@@ -37,10 +29,38 @@ def next():
 # This function equip an item. mostly for testing atm. this is the current command to equip, "playerDamage = equip("sword")"
 def equip(item):
 	if item == "dagger":
+		global playerWeapon
+		playerWeapon = "dagger"
+		global playerDamage
 		return 15
 	elif item == "sword":
+		playerWeapon = "sword"
 		return 20
 
+
+# This will ask you to equip thing, followed by equip function.
+def askEquip():
+	global advance
+	advance = 3
+	while advance != 1 or 2:
+		askEquip = raw_input("Do you wish to equip %s? 'yes' or 'no': " % thing)
+		if askEquip == "yes":
+			advance = 1
+		elif askEquip == "no":
+			advance = 2
+		elif askEquip != "no" or "yes":
+			advance = 3
+			
+		# this prints results and ends the while loop
+		if advance == 1:
+			print "You equiped the %s" % thing
+			equip(thing)
+			print playerStat()
+			break
+		if adavance == 2:
+			print "you store it in your backpack for later"
+			inventory = thing
+			break
 
 # This is a function to let you look at an item in the game.
 def look ():
@@ -66,9 +86,10 @@ def look ():
 
 # This is a function for picking up an item.
 def pickup():
+	global advance
 	advance = 3
 	while advance != 1 or 2:
-		pickup = raw_input("Do you wish to pick up %s? 'yes' or 'no': " % thing)
+		pickup = raw_input("Do you wish to pick up the %s? 'yes' or 'no': " % thing)
 		if pickup == "yes":
 			advance = 1
 		elif pickup == "no":
@@ -120,8 +141,11 @@ print " "
 look()
 
 if advance == 1:
-	print "the shiny metal object is a dagger."
+	thing = "dagger"
+	print "the shiny metal object is a %s. " % thing
 	pickup()
+	if advance == 1:
+		askEquip()
 elif advance == 2:
 	print "you continue to walk, wondering on what that item might've been."
 

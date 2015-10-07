@@ -33,6 +33,10 @@ fixing the variables|work in progress
 
 ####change log
 <b>7/10-15:</b>  
-I've started to create the pickup function. I now need to figure out how to move the variables outside of the function and function.py and into the game.py and variable.py.
+I made askEquip, and edited equip to handle equiping of the weapon. It currently won't update playerWeapon, and I haven't implemeted the damage buff thing. 
 
 I made test.py, which is a combination of every file. Now the game works flawlessly.
+
+I've started to create the pickup function. I now need to figure out how to move the variables outside of the function and function.py and into the game.py and variable.py.
+
+
