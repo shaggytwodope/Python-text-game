@@ -40,6 +40,8 @@ make equip support armor|
 ####change log
 <b>8/10-15</b>  
 
+Removed the advance variable from the top of the sheet. 
+
 Done some formatting, also added some things in the TODO.
 
 <b>7/10-15:</b>  
