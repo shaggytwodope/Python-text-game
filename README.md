@@ -32,6 +32,7 @@ pick up item|done
 fixing the variables|done
 merge askEquip and equip|
 combat|
+make equip support armor|
 
 
 
