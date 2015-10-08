@@ -52,10 +52,7 @@ def askEquip():
 			
 		# this prints results and ends the while loop
 		if advance == 1:
-			print "You equiped the %s" % thing
-			print ""
-			global playerDamage
-			playerDamage = equip(thing)
+			print "You equiped the %s" % thing print "" global playerDamage playerDamage = equip(thing)
 			print playerStat()
 			print ""
 			break
@@ -156,3 +153,5 @@ elif advance == 2:
 	print "you continue to walk, wondering on what that item might've been."
 
 print "last message in game.py, if this showes, the game is ended"
+
+
