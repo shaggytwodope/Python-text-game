@@ -1,5 +1,3 @@
-# These are the main variables for the game
-
 # Names and initial stats
 playerHealth	= 100
 playerDamage	= 10
@@ -9,9 +7,7 @@ thing		= "none"
 advance		= 0
 playerBag	= "none"
 
-#test
 
-# These are all the functions for the game
 
 # This function prints you characters stats.
 def playerStat():
@@ -29,7 +25,7 @@ def next():
 		next = raw_input("Type 'next' to continue: ")
 
 
-# This function equip an item. mostly for testing atm. this is the current command to equip, "playerDamage = equip("sword")"
+# This function equip an item. I should merge this and askEquip.
 def equip(item):
 	if item == "dagger":
 		global playerWeapon
