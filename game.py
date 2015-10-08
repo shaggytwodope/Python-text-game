@@ -4,7 +4,6 @@ playerDamage	= 10
 playerArmor	= 0
 playerWeapon	= "none"
 thing		= "none"
-advance		= 0
 playerBag	= "none"
 
 
