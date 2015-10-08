@@ -37,7 +37,7 @@ combat|
 
 
 ####change log
-<b>8/10-15</>  
+<b>8/10-15</b>  
 
 Done some formatting, also added some things in the TODO.
 
