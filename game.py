@@ -46,6 +46,7 @@ def askEquip():
 	advance = 3
 	while advance != 1 or 2:
 		askEquip = raw_input("Do you wish to equip %s? 'yes' or 'no': " % thing)
+		print ""
 		if askEquip == "yes":
 			advance = 1
 		elif askEquip == "no":
@@ -56,14 +57,18 @@ def askEquip():
 		# this prints results and ends the while loop
 		if advance == 1:
 			print "You equiped the %s" % thing
+			print ""
 			global playerDamage
 			playerDamage = equip(thing)
 			print playerStat()
+			print ""
 			break
 		if advance == 2:
 			print "you store it in your backpack for later"
+			print ""
 			playerBag = thing
 			print "inventory: %s"		% playerBag
+			print""
 			break
 
 # This is a function to let you look at an item in the game.
@@ -72,6 +77,7 @@ def look ():
 	advance = 3
 	while advance != 1 or 2:
 		look = raw_input("Type 'look' to look at %s, or 'walk' to walk away: " % thing)
+		print ""
 		if look == "look":
 			advance = 1
 		elif look == "walk":
