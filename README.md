@@ -8,14 +8,6 @@ I just started this project to learn how to program. I chosed python for no appa
 
 
 
-###currently how you equip
-playerDamage = equip("sword"). This is not yet implemented.
-
-
-###Main.py
-
-I'm making a main.py script to look for inputs. It's mostly for experimenting atm. It is not in use atm, I need to make so more functions and such before it can be used.
-
 ###TODO
 Things|done
 ----|----
