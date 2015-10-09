@@ -86,25 +86,17 @@ def askEquip():
 
 # This is a function to let you look at an item in the game.
 def look ():
-	global advance
-	advance = 3
-	while advance != 1 or 2:
-		look = raw_input("Type 'look' to look at %s, or 'walk' to walk away: " % thing)
-		print ""
-		if look == "look":
-			advance = 1
-		elif look == "walk":
-			advance = 2
-		elif look != "walk" or "look":
-			advance = 3
-		
-		# This prints out your results and ends the while loop.
-		if advance == 1:
-			print "You look at %s " % thing
-			break
-		elif advance == 2:
-			print "You walk away"
-			break
+    look = raw_input("Do you wish to 'look' at the %s or 'walk' away: " % thing)
+    print ""
+    while look != "look" or "walk":
+	if look == "look":
+	    print "you look at %s " % thing
+	    print ""
+	    break
+	elif look == "walk":
+	    print "you walk away"
+	    print ""
+	    break
 		
 
 # This is a function for picking up an item.
