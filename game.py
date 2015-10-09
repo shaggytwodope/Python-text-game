@@ -27,25 +27,22 @@ class enemy(object):
 	return self.health
 
 
-# This is a function for combat
-def combat():
-    global vCombat
-    vCombat = 3
-    while vCombat != 1:
-	askCombat = raw_input("You you wish to 'attack' or try and 'flee': ")
-	print ""
-	if askCombat == "attack":
-	    vCombat = 1
-	elif askCombat == "flee":
-	    vCombat = 1
 
-	if vCombat == 2:
-		print "you attack the enemy"
-		print ""
-	    # insert attack function
-	if vCombat == 2:
-	    # insert flee function
-	    print "you fleed"
+# Combat function
+def combat():
+    askCombat = raw_input("Do you wish to 'attack' or attempt to 'flee'?: ")
+    print ""
+    while askCombat != "attack" or "flee":
+	if askCombat == "attack":
+	    print "You attack the enemy"
+	    print ""
+	    break
+	elif askCombat == "flee":
+	    print "You fled the enemy"
+	    print ""
+	    break
+
+
 	
 
 # This function lets you advanced when typing "next".
@@ -68,34 +65,24 @@ def equip(item):
 
 # This will ask you to equip thing, followed by equip function.
 def askEquip():
-	global advance
-	advance = 3
-	while advance != 1 or 2:
-		askEquip = raw_input("Do you wish to equip %s? 'yes' or 'no': " % thing)
-		print ""
-		if askEquip == "yes":
-			advance = 1
-		elif askEquip == "no":
-			advance = 2
-		elif askEquip != "no" or "yes":
-			advance = 3
-			
-		# this prints results and ends the while loop
-		if advance == 1:
-			print "You equiped the %s" % thing
-			print ""
-			global playerDamage
-			playerDamage = equip(thing)
-			print playerStat()
-			print ""
-			break
-		if advance == 2:
-			print "you store it in your backpack for later"
-			print ""
-			playerBag = thing
-			print "inventory: %s"		% playerBag
-			print""
-			break
+    askEquip = raw_input("Do you wish to equip %s? 'yes' or 'no': " % thing)
+    while askEquip != "yes" or "no":
+	if askEquip == "yes":
+	    print "You equiped the %s" % thing
+	    print ""
+	    global playerDamage
+	    playerDamage = equip(thing)
+	    print playerStat()
+	    print ""
+	    break
+	elif askEquip == "no":
+	    print "You store it in your backback for later"
+	    print ""
+	    playerBag = thing
+	    print "Inventory: %s" % thing
+	    print ""
+	    break
+
 
 # This is a function to let you look at an item in the game.
 def look ():

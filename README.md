@@ -32,6 +32,8 @@ make equip support armor|
 ####change log
 <b>9/10-15</b>  
 
+My buddy challanged me to short down my functions. I've done so with askEquip() and Combat()
+
 Started on the combat system, and learning about classes.
 
 
