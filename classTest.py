@@ -7,4 +7,6 @@ class Calculator(object):
 	return self.current
 
 
-
+myBuddy = Calculator()
+myBuddy.add(2)
+print(myBuddy.getCurrent())
