@@ -17,6 +17,21 @@ def playerStat():
 	print "inventory: %s"		% playerBag
 
 
+# Enemy Class
+class enemy(object):
+    def __init__(self):
+	self.health(100)
+    def hit(self,amount):
+	self.health -= amount
+    def getHealth(self):
+	return.health
+
+def orc():
+    orc = enemy()
+    orc.sub(playerWeapon)
+
+
+
 # This function lets you advanced when typing "next".
 def next():
 	next = raw_input("Type 'next' to continue: ")
@@ -109,7 +124,6 @@ def pickup():
 		elif advance == 2:
 			break
 			
-			# Amma make a game!
 
 
 # Title
