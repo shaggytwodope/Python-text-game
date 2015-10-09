@@ -26,11 +26,10 @@ class enemy(object):
     def getHealth(self):
 	return.health
 
-def orc():
-    orc = enemy()
-    orc.sub(playerWeapon)
 
-
+# This is a function for attacking
+def attack():
+       
 
 # This function lets you advanced when typing "next".
 def next():
