@@ -38,6 +38,11 @@ make equip support armor|
 
 
 ####change log
+<b>9/10-15</b>  
+
+Started on the combat system, and learning about classes.
+
+
 <b>8/10-15</b>  
 
 Removed the advance variable from the top of the sheet. 

@@ -24,12 +24,29 @@ class enemy(object):
     def hit(self,amount):
 	self.health -= amount
     def getHealth(self):
-	return.health
+	return self.health
 
 
-# This is a function for attacking
-def attack():
-       
+# This is a function for combat
+def combat():
+    global vCombat
+    vCombat = 3
+    while vCombat != 1:
+	askCombat = raw_input("You you wish to 'attack' or try and 'flee': ")
+	print ""
+	if askCombat == "attack":
+	    vCombat = 1
+	elif askCombat == "flee":
+	    vCombat = 1
+
+	if vCombat == 2:
+		print "you attack the enemy"
+		print ""
+	    # insert attack function
+	if vCombat == 2:
+	    # insert flee function
+	    print "you fleed"
+	
 
 # This function lets you advanced when typing "next".
 def next():
@@ -166,6 +183,9 @@ if advance == 1:
 		askEquip()
 elif advance == 2:
 	print "you continue to walk, wondering on what that item might've been."
+
+
+combat()
 
 print "last message in game.py, if this showes, the game is ended"
 
